@@ -1,0 +1,148 @@
+/* === Стили кнопки открытия === */
+.open-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #3b82f6;
+    color: #fff;
+}
+
+.open-btn:hover {
+    background: #2563eb;
+}
+
+/* === Фон-затемнение (overlay) === */
+.modal-overlay {
+    /* по умолчанию скрыто */
+    display: none;
+    position: fixed;
+    inset: 0;
+    /* top:0; right:0; bottom:0; left:0 */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* класс-переключатель: показываем окно */
+.modal-overlay.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Само модальное окно === */
+.modal {
+    background: #fff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    width: 320px;
+    max-width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: sans-serif;
+}
+
+.modal h2 {
+    margin: 0 0 12px;
+    font-size: 20px;
+}
+
+.modal p {
+    margin: 0 0 20px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Кнопка-крестик */
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+    color: #888;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+/* Кнопка «Закрыть» внутри */
+.close-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: orange;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.close-btn:hover {
+    background: orangered;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    /* По умолчанию окно скрыто */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Когда JS добавляет класс active — показываем окно */
+.modal-overlay.active {
+    display: flex;
+}
+
+/* Само окошко */
+.modal {
+    background-color: #141024;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.modal h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+/* Крестик в углу */
+.close-x {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Поля ввода Имя и Телефон */
+.modal input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Кнопка внутри окна */
+.modal .btn {
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: orange;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ROBO.SCHOOL</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal/modal-style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="logo">ROBO.SCHOOL</h1>
+        <div class="nav">
+          <a href="#">О школе</a>
+          <a href="#">Тренеры</a>
+          <a href="#">Стоимость</a>
+        </div>
+        <a class="phone" href="#">+7 999 999 99 99</a>
+      </div>
+      <div class="hero">
+        <div class="hero_one">
+          <h2>ROBO SCHOOL</h2>
+          <p>Lorem ipsum dolor sit amet</p>
+          <a class="btn" id="openBtn" href="#">Оставить заявку</a>
+        </div>
+        <div class="hero_two">
+          <img src="images.jfif" alt="Картинка" />
+        </div>
+      </div>
+    </div>
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <span class="close-x" id="closeX">&times;</span>
+        <h3>Оставить заявку</h3>
+        <p>
+          Заполните форму, и мы свяжемся с вами для уточнения даты и времени
+          персонаной экскурсии
+        </p>
+        <input type="text" placeholder="Имя" />
+        <input type="tel" placeholder="Телефон" />
+        <button class="btn" id="closeBtn">Оставить заявку</button>
+      </div>
+    </div>
+    <script src="modal/modal-script.js"></script>
+  </body>
+</html>
